@@ -17,6 +17,11 @@ __Canvas Quiz Student Analysis Reformatting__ is a python script that will refor
   > note: if there are multiple csvs in this file they will be combined into a single output
   > see "sample.csv"
 
+To extract your Student Analysis file from a quiz, in Canvas navigate to the quiz you are interested in, select "Quiz Statistics", and then "Student Analysis". The csv the is generated should then be saved in `quiz_student_analysis_file`
+
+![](imgs/quiz-statistics-button.png)
+![](imgs/student-analysis-button.png)
+
 - the input file must include all columns in the original export (green), as well as the questions from that quiz (multi colours) 
 
 ![](imgs/1-example-file.png)
@@ -48,8 +53,7 @@ _The long format of the given csv(s) in the input folder._
 
 1. make sure you are in the project directory
 2. add your file(s) to quiz_student_analysis_file
-3. run 
-> `$ python transform_quizzes.py`
+3. run `$ python transform_quizzes.py`
 ### General (terminal instructions)
 
 > Project uses **conda** to manage environment (See official **conda** documentation [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file))
@@ -64,7 +68,7 @@ _The long format of the given csv(s) in the input folder._
 
 1. Run
    1. `$ conda activate canvas-student-analysis-reformatting`
-   1. `python transform_quizzes.py`
+   1. `$ python transform_quizzes.py`
 
 
 ---
