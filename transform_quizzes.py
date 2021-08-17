@@ -13,6 +13,7 @@ and where possible outputs the data with the original name + _long_format".
 import os
 import pandas as pd
 import re
+import sys
 
 ### reformat Student Report from Canvas
 # questions need to take the form of "idnumber: anything" ie. "223232: some question"
@@ -135,9 +136,14 @@ def main():
         
     files = os.listdir(folder)
     files = [file for file in files if re.search(".csv", file)]
+    print(files)
     
     #don't try this for long formats already
     files = [file for file in files if not re.search("_long_format.csv", file)]
+    
+    if files==[]:
+        print(f"No files in {folder}, please add your export and run again")
+        sys.exit()
 
     for file in files:
         try:
