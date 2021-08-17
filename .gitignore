@@ -1,5 +1,5 @@
-
-
+quiz_student_analysis_file/*
+!folder/.gitkeep
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
