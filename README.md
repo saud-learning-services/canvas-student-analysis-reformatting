@@ -14,10 +14,10 @@ __Canvas Quiz Student Analysis Reformatting__ is a python script that will refor
 ## Inputs
 
 - any csv file in `quiz_student_analysis_file`
-  > note: if there are multiple csvs in this file they will be combined into a single output
-  > see "sample.csv"
+  > - note: if there are multiple csvs in this file they will be combined into a single output
+  > - see "sample.csv" in the `sample` folder for example (note - you could run this with the sample to see how it works!)
 
-To extract your Student Analysis file from a quiz, in Canvas navigate to the quiz you are interested in, select "Quiz Statistics", and then "Student Analysis". The csv the is generated should then be saved in `quiz_student_analysis_file`
+To extract your Student Analysis file from a quiz, in Canvas navigate to the quiz you are interested in, select "Quiz Statistics", and then "Student Analysis". The csv that is generated should then be saved in `quiz_student_analysis_file`
 
 ![](imgs/quiz-statistics-button.png)
 ![](imgs/student-analysis-button.png)
